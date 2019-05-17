@@ -1,0 +1,8 @@
+<h1>Songs</h1>
+  <%= link_to "Create Song", new_artist_song_path(@artist) %>
+<% @songs.each do |song| %>
+  <h3> <%= song.name %> </h3>
+  <%= link_to "Show Song", artist_song_path(@artist, song) %>
+  <%= link_to "Edit Song", edit_artist_song_path(@artist, song) %>
+  <%= link_to "Delete Song", artist_song_path(@artist, song), method: :delete %>
+<% end %>

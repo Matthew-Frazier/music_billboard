@@ -1,0 +1,6 @@
+<h1>Edit Song</h1>
+
+<%= render "form", song: [@artist, @song] %>
+
+<%= link_to 'Show', artist_song_path(@artist, @song) %>
+<%= link_to 'Back', artist_songs_path(@artist) %>

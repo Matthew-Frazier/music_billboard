@@ -1,0 +1,8 @@
+<h1>Billboards</h1>
+  <%= link_to "Create Billboard", new_billboard_path %>
+<% @billboards.each do |billboard| %>
+  <h3> <%= billboard.name %> </h3>
+  <%= link_to "Show Billboard", billboard_path(billboard) %>
+  <%= link_to "Edit Billboard", edit_billboard_path(billboard) %>
+  <%= link_to "Delete Billboard", billboard, method: :delete %>
+<% end %>

@@ -1,0 +1,6 @@
+<h1>Top 10 House</h1>
+  <ul>
+  <% @billboard.songs.each do |song| %>
+    <li><%= song.name %></li>
+  <% end %>
+  </ul>

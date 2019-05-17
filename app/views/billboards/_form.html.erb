@@ -1,0 +1,11 @@
+<%= form_with(model: billboard, local: true, class: "ui form") do |f| %>
+  <div class = "field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Billboard Name", autofocus: true %>
+
+    <%= f.label :genre %>
+    <%= f.text_field :genre, required: true, placeholder: "Genre" %>
+
+    <%= f.submit nil, class:"ui button green"%>
+  </div>
+<% end %>

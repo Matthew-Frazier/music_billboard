@@ -1,0 +1,14 @@
+<%= form_with(model: song, local: true, class: "ui form") do |f| %>
+  <div class = "field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Song Name", autofocus: true %>
+
+    <%= f.label :genre %>
+    <%= f.text_field :genre, required: true, placeholder: "Music Genre"%>
+
+    <%= f.label :billboard_id %>
+    <%= f.number_field :billboard_id %>
+
+    <%= f.submit nil, class:"ui button green"%>
+  </div>
+<% end %>
