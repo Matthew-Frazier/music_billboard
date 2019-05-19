@@ -1,9 +1,15 @@
-<h1>Artists</h1>
+<h1 class="home_header">Artists</h1>
+<hr>
   <%= link_to "Create Artist", new_artist_path %>
+<hr>
 <% @artists.each do |artist| %>
+  <hr>
   <h3> <%= artist.name %> </h3>
   <%= link_to "Show Artist", artist_path(artist) %>
+  <br>
   <%= link_to "Edit Artist", edit_artist_path(artist) %>
+  <br>
   <%= link_to "Delete Artist", artist, method: :delete %>
+  <hr>
 <% end %>
 

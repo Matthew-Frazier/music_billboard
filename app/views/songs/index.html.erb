@@ -1,8 +1,13 @@
 <h1>Songs</h1>
+<hr>
   <%= link_to "Create Song", new_artist_song_path(@artist) %>
+<hr>
 <% @songs.each do |song| %>
-  <h3> <%= song.name %> </h3>
-  <%= link_to "Show Song", artist_song_path(@artist, song) %>
+  <hr>
+  <h3>Song: <%= song.name %> </h3>
+  <h5>Genre: <%= song.genre%> </h5>
   <%= link_to "Edit Song", edit_artist_song_path(@artist, song) %>
+  <br>
   <%= link_to "Delete Song", artist_song_path(@artist, song), method: :delete %>
+  <hr>
 <% end %>

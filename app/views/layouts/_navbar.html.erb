@@ -1,5 +1,9 @@
-<div class="ui three item menu">
-<%= link_to "Home", root_path, class: "item" %>
-<%= link_to "Billboards", billboards_path, class: "item" %>
-<%= link_to "Artists", artists_path, class: "item" %>
+<div class="ui inverted menu">
+  <%= link_to "Home", root_path, class: "item" %>
+  <%= link_to "Billboards", billboards_path, class: "item" %>
+  <%= link_to "Artists", artists_path, class: "item" %>
+  <div class="ui inverted right menu">
+    <button class="item">Log in</button>
+    <button class="item">Sign up</button>
+  </div>
 </div>
